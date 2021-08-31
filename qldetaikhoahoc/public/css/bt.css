@@ -1,0 +1,23 @@
+.thoigiancss{
+    padding-left: 30px;
+    background-color: red;
+}
+input[type="radio"]{
+	margin-right: 10px;
+}
+.time{
+    float: right;
+    font-size: 24px;
+}
+#footer{
+    text-align: center;
+}
+input[type="button"]{
+    background-color: #ffd9b3;
+    border: 1px solid #cccc;
+    width: 20%;
+    height: 35px;
+}
+input[type="button"]:hover{
+    background-color: #ffa64d;
+}

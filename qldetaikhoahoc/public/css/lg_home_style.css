@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	max-width: 100%;
+	margin: 0 auto;
+	padding:0;
+}
+/***********header********/
+header{
+	max-width: 100%;
+	height: 50px;
+	background: gray;
+	/*position: fixed;*/
+
+	
+}
+.bar{
+	float: left;
+	padding-left: 30px;
+	position: static;
+	
+}
+.bar ul{
+	margin: 0;
+	padding:0;
+	display: flex;
+
+}
+.bar ul li{
+	list-style: none;
+	line-height: 50px;
+}
+.bar ul li a{
+	text-decoration: none;
+	color: white;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.bar ul li:hover{
+	background: pink;
+	display: block;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.bar ul li .active{
+	background: pink;
+	display: block;
+	cursor: pointer;
+}
+.logo{
+	float: left;
+}
+.logo img{
+	max-width: 215px;
+}
+.logo-mb{
+	display: none;
+}
+
+
+
+/***********close header********/
+
+/*******account right********/
+.account{
+	float: right;
+	padding-right: 30px;
+}
+.account a{
+	font-size: 25px;
+	line-height: 50px;
+}
+.account a i{
+	color: white;
+}
+.account a i:hover{
+	color: pink;
+	transition: 0.5s;
+}
+.address{
+	padding-left: 20px;
+}
+/*******close account right********/
+/********nav-mb*********/
+.sidenav{
+	display: none;
+}
+#main{
+	display: none;
+}
+/********close nav-mb*********/
+.content{
+	clear: left;
+}
+.box div {
+  background-color: cyan;
+}
+.box:nth-child(2n) div {
+  background: yellow;
+}
+.container {
+  max-width: 1240px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+.container.container-small {
+  max-width: 1600px;
+
+}
+.demo2 {
+
+margin-left: -20px;
+}
+.demo2 .box {
+  width: 33.33%;
+  padding-left: 20px;
+}
+.demo2 .box:nth-child(1) {
+  flex: 1;
+  width: auto;
+  width: calc(100% - 400px);
+  flex: calc(100% - 800px);
+}
+
+.box-top {
+padding: 100px 50px 0 50px;
+margin-left: -20px;
+}
+.box-top .box {
+  width: 33.33%;
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********chat********/
+.chat{
+	max-width: 100%;
+	height: 50px;
+	position: fixed;
+	top:680px;
+	left: 15px;
+}
+.chat a{
+	text-decoration: none;
+	color: black;
+	padding:13px;
+	border-radius: 25px;
+	box-shadow: 5px 5px 8px #888888;
+
+}
+.chat a i{
+	font-size: 30px;
+	color: green;
+}
+/*********close chat********/
+
+@media only screen and (max-width: 1024px){
+	body{
+		max-width: 100%;
+	}
+	.logo img{
+		display: none;
+	}
+	.logo-mb{
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	.logo-mb img{
+		max-width: 215px;
+	}
+	.demo2 .box {
+    width: 50%;
+  }
+
+
+	
+
+
+
+
+/*******nav pc*******/
+	.bar .nav-pc{
+		display: none;
+	}
+	.address{
+		display: none;
+	}
+
+/******menu nav*********/
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background:gray;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		display: block;
+	}
+
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: white;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+
+	#main {
+		transition: margin-left .5s;
+		/*padding: 16px;*/
+		display: block;
+		color: white;
+	}
+	#main:hover{
+		color: pink;
+	}
+	/******close menu nav*********/
+
+}
+
+@media screen and (max-width: 767px){
+	.home-content .section .product-item {
+	    width: calc((100% - 18px)/2);
+	    margin-bottom: 14px;
+	    padding-bottom: 5px;
+	    border-bottom: solid 1px #e9e9e9;
+	}
+	.demo2 .box {
+    width: 100%;
+  }
+}
+
